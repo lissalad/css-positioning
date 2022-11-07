@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+  </head>
+  <body>
+    <style>
+      /* These styles just apply to the page to arrange the boxes in the center */
+      body,
+      html {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .page-wrapper {
+        /* display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 1rem; */
+
+        /* dylan help */
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        border: black solid 2px;
+        height: 200px;
+        width: 200px;
+        position: relative;
+      }
+    </style>
+
+    <div class="page-wrapper">
+      <!-- ------------------------------------------------------- -->
+      <!-- Challenge 1 draw a dash put the inner div in the center -->
+      <div class="challenge-1 box">
+        <div></div>
+      </div>
+
+      <style>
+        .challenge-1 {
+        }
+
+        .challenge-1 > div {
+          background: black;
+          height: 30px;
+          width: 150px;
+
+          position: absolute;
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+
+      <!-- Challenge 2 draw an = with two divs -->
+
+      <div class="challenge-2 box">
+        <div></div>
+        <div></div>
+      </div>
+
+      <style>
+        .challenge-2 {
+        }
+
+        .challenge-2 > div {
+          background: black;
+          height: 30px;
+          width: 150px;
+          position: absolute;
+        }
+
+        .challenge-2 > div:last-child {
+          margin: 45px 0;
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+
+      <!-- Challenge 3 draw an X with two divs -->
+
+      <div class="challenge-3 box">
+        <div></div>
+        <div></div>
+      </div>
+
+      <style>
+        .challenge-3 {
+        }
+
+        .challenge-3 > div {
+          background: black;
+          height: 30px;
+          width: 140px;
+          position: absolute;
+        }
+
+        .challenge-3 > div:first-child {
+          transform: rotate(45deg);
+        }
+
+        .challenge-3 > div:last-child {
+          transform: rotate(-45deg);
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+
+      <!-- Challenge 4 draw a circle with an X  -->
+
+      <div class="challenge-4 box">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <style>
+        .challenge-4 {
+        }
+
+        .challenge-4 > div {
+          position: absolute;
+        }
+
+        .challenge-4 > div:nth-child(1) {
+          border: black 20px solid;
+          border-radius: 100%;
+          height: 140px;
+          width: 140px;
+        }
+
+        .challenge-4 > div:nth-child(2) {
+          background: black;
+          height: 20px;
+          width: 140px;
+          transform: rotate(45deg);
+        }
+
+        .challenge-4 > div:nth-child(3) {
+          background: black;
+          height: 20px;
+          width: 140px;
+          transform: rotate(-45deg);
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+
+      <!-- Challenge 5 draw a check mark -->
+
+      <div class="challenge-5 box">
+        <div></div>
+      </div>
+
+      <style>
+        .challenge-5 {
+        }
+
+        .challenge-5 > div {
+          height: 120px;
+          width: 50px;
+          border-bottom: black 35px solid;
+          border-right: black 35px solid;
+          transform: rotate(45deg);
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+
+      <!-- Challenge 6 draw a hamburger -->
+      <!-- Stretch Challenge: Add lettuce, tomato, and cheese -->
+
+      <div class="challenge-6 box">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <style>
+        .challenge-6 {
+        }
+
+        .challenge-6 > div {
+          height: 40px;
+          width: 160px;
+          background-color: rgb(198, 190, 151);
+        }
+
+        .challenge-6 > div:nth-child(1) {
+          border-radius: 30px 30px 0 0;
+        }
+
+        .challenge-6 > div:nth-child(2) {
+          background-color: rgb(128, 53, 30);
+          margin: 5px 0;
+          height: 35px;
+        }
+
+        .challenge-6 > div:nth-child(3) {
+          border-radius: 0 0 30px 30px;
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+
+      <!-- Challenge 7 draw the apple switch -->
+
+      <div class="challenge-7 box">
+        <div>
+          <div></div>
+        </div>
+      </div>
+
+      <style>
+        .challenge-7 {
+        }
+
+        .challenge-7 > div {
+          height: 90px;
+          width: 160px;
+          border: black 8px solid;
+          border-radius: 90px;
+          position: relative;
+        }
+
+        .challenge-7 > div > div {
+          position: absolute;
+          background-color: black;
+          height: 85px;
+          width: 85px;
+          border-radius: 100%;
+          /* margin: 3px; */
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+
+      <!-- Challenge 8 Draw a smilley face -->
+
+      <div class="challenge-8 box">
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <style>
+        .challenge-8 {
+        }
+
+        .challenge-8 > div {
+          height: 170px;
+          width: 170px;
+          background-color: yellow;
+          border-radius: 100%;
+          position: relative;
+        }
+
+        .challenge-8 > div > div:nth-child(1) {
+          height: 20px;
+          width: 20px;
+          background-color: black;
+          border-radius: 100%;
+          position: absolute;
+          top: 45px;
+        }
+
+        .challenge-8 > div > div:nth-child(2) {
+          height: 20px;
+          width: 20px;
+          background-color: black;
+          border-radius: 100%;
+          position: absolute;
+          top: 45px;
+        }
+
+        .challenge-8 > div > div:nth-child(3) {
+          height: 50px;
+          width: 50px;
+          border-right: 12px black solid;
+          border-bottom: 12px black solid;
+          border-radius: 0 0 100% 0;
+          transform: rotate(45deg);
+          position: absolute;
+
+          bottom: 15px;
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+
+      <!-- Challenge 9 -->
+
+      <div class="challenge-9 box">
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <style>
+        .challenge-9 {
+        }
+
+        .challenge-9 > div {
+          border: black 16px solid;
+          border-radius: 100%;
+          height: 150px;
+          width: 150px;
+          position: absolute;
+        }
+
+        .challenge-9 > div > div:nth-child(1) {
+          background: black;
+          height: 20px;
+          width: 120px;
+          position: absolute;
+        }
+
+        .challenge-9 > div > div:nth-child(2) {
+          height: 30px;
+          width: 30px;
+          border-bottom: black 20px solid;
+          border-right: black 20px solid;
+          transform: rotate(-45deg);
+          position: absolute;
+          right: 25px;
+        }
+      </style>
+      <!-- ------------------------------------------------------- -->
+    </div>
+  </body>
+</html>
