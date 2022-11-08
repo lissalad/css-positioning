@@ -19,15 +19,9 @@
         align-items: center;
       }
       .page-wrapper {
-        /* display: grid;
-        grid-template-columns: repeat(3, 100px);
-        gap: 1rem; */
-
-        /* dylan help */
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
         gap: 1rem;
-        flex-wrap: wrap;
       }
 
       .box {
@@ -55,6 +49,8 @@
           width: 150px;
 
           position: absolute;
+          top: calc(50% - 15px);
+          left: calc(50% - 75px);
         }
       </style>
       <!-- ------------------------------------------------------- -->
@@ -74,7 +70,10 @@
           background: black;
           height: 30px;
           width: 150px;
+
           position: absolute;
+          top: calc(25% + 15px);
+          left: calc(50% - 75px);
         }
 
         .challenge-2 > div:last-child {
@@ -98,7 +97,10 @@
           background: black;
           height: 30px;
           width: 140px;
+
           position: absolute;
+          top: calc(50% - 15px);
+          left: calc(50% - 75px);
         }
 
         .challenge-3 > div:first-child {
@@ -124,7 +126,7 @@
         }
 
         .challenge-4 > div {
-          position: absolute;
+          position: relative;
         }
 
         .challenge-4 > div:nth-child(1) {
@@ -132,20 +134,30 @@
           border-radius: 100%;
           height: 140px;
           width: 140px;
+
+          position: relative;
+          top: calc(50% - 90px);
+          left: calc(50% - 90px);
         }
 
         .challenge-4 > div:nth-child(2) {
           background: black;
           height: 20px;
-          width: 140px;
+          width: 120px;
           transform: rotate(45deg);
+          position: absolute;
+          top: calc(50% - 10px);
+          left: calc(50% - 60px);
         }
 
         .challenge-4 > div:nth-child(3) {
           background: black;
           height: 20px;
-          width: 140px;
+          width: 120px;
           transform: rotate(-45deg);
+          position: absolute;
+          top: calc(50% - 10px);
+          left: calc(50% - 60px);
         }
       </style>
       <!-- ------------------------------------------------------- -->
@@ -163,9 +175,13 @@
         .challenge-5 > div {
           height: 120px;
           width: 50px;
-          border-bottom: black 35px solid;
-          border-right: black 35px solid;
+          border-bottom: black 30px solid;
+          border-right: black 30px solid;
           transform: rotate(45deg);
+
+          position: absolute;
+          top: calc(50% - 90px);
+          left: calc(50% - 35px);
         }
       </style>
       <!-- ------------------------------------------------------- -->
@@ -185,22 +201,34 @@
 
         .challenge-6 > div {
           height: 40px;
-          width: 160px;
+          width: 150px;
           background-color: rgb(198, 190, 151);
         }
 
         .challenge-6 > div:nth-child(1) {
           border-radius: 30px 30px 0 0;
+
+          position: absolute;
+          bottom: calc(50% + 20px);
+          left: calc(50% - 75px);
         }
 
         .challenge-6 > div:nth-child(2) {
           background-color: rgb(128, 53, 30);
           margin: 5px 0;
-          height: 35px;
+          height: 30px;
+
+          position: absolute;
+          top: calc(50% - 20px);
+          left: calc(50% - 75px);
         }
 
         .challenge-6 > div:nth-child(3) {
           border-radius: 0 0 30px 30px;
+
+          position: absolute;
+          top: calc(50% + 20px);
+          left: calc(50% - 75px);
         }
       </style>
       <!-- ------------------------------------------------------- -->
@@ -222,16 +250,21 @@
           width: 160px;
           border: black 8px solid;
           border-radius: 90px;
+
           position: relative;
+          top: calc(50% - 53px);
+          left: calc(50% - 88px);
         }
 
         .challenge-7 > div > div {
-          position: absolute;
           background-color: black;
           height: 85px;
           width: 85px;
           border-radius: 100%;
-          /* margin: 3px; */
+
+          position: absolute;
+          top: 3px;
+          left: 3px;
         }
       </style>
       <!-- ------------------------------------------------------- -->
@@ -255,7 +288,10 @@
           width: 170px;
           background-color: yellow;
           border-radius: 100%;
+
           position: relative;
+          top: calc(50% - 85px);
+          left: calc(50% - 85px);
         }
 
         .challenge-8 > div > div:nth-child(1) {
@@ -263,8 +299,10 @@
           width: 20px;
           background-color: black;
           border-radius: 100%;
+
           position: absolute;
-          top: 45px;
+          top: calc(40% - 10px);
+          right: calc(50% + 20px);
         }
 
         .challenge-8 > div > div:nth-child(2) {
@@ -272,8 +310,10 @@
           width: 20px;
           background-color: black;
           border-radius: 100%;
+
           position: absolute;
-          top: 45px;
+          top: calc(40% - 10px);
+          left: calc(50% + 20px);
         }
 
         .challenge-8 > div > div:nth-child(3) {
@@ -283,9 +323,11 @@
           border-bottom: 12px black solid;
           border-radius: 0 0 100% 0;
           transform: rotate(45deg);
-          position: absolute;
 
-          bottom: 15px;
+          position: absolute;
+          /* top: calc(50% - 25px); */
+          left: calc(50% - 31px);
+          top: 80px;
         }
       </style>
       <!-- ------------------------------------------------------- -->
@@ -308,14 +350,20 @@
           border-radius: 100%;
           height: 150px;
           width: 150px;
-          position: absolute;
+
+          position: relative;
+          top: calc(50% - 91px);
+          left: calc(50% - 91px);
         }
 
         .challenge-9 > div > div:nth-child(1) {
           background: black;
           height: 20px;
-          width: 120px;
+          width: 100px;
+
           position: absolute;
+          top: calc(50% - 10px);
+          left: calc(50% - 50px);
         }
 
         .challenge-9 > div > div:nth-child(2) {
@@ -324,8 +372,10 @@
           border-bottom: black 20px solid;
           border-right: black 20px solid;
           transform: rotate(-45deg);
+
           position: absolute;
-          right: 25px;
+          top: calc(50% - 25px);
+          right: calc(50% - 50px);
         }
       </style>
       <!-- ------------------------------------------------------- -->
